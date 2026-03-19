@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <meta charset="UTF-8" />
   <meta name="google-site-verification" content="asKFQ79NVRK2QdkJTcGNzvWs0wGt5XOCp5WML_vvWX0"/>
-  <title>Libertad Financiera | Ideas para ganar dinero online</title>
-  <meta name="description" content="Aprende a ganar dinero por Internet, crear ingresos pasivos y usar AdSense con guías sencillas para empezar desde cero." />
+  <title>Libertad Financiera | Ganar dinero online y AdSense</title>
+  <meta name="description" content="Aprende a ganar dinero online, crear ingresos pasivos y monetizar tu web con AdSense paso a paso." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9161620238567586"
@@ -11,108 +12,457 @@
 
   <style>
     :root{
-      --nav:#0a2540;
-      --bg:#f4f6f8;
-      --text:#0b1220;
-      --muted:#4b5563;
-      --card:#ffffff;
-      --radius:14px;
-      --shadow:0 10px 25px rgba(10,37,64,.08);
+      --bg:#f5f7fb;
+      --white:#ffffff;
+      --dark:#0f172a;
+      --navy:#0a2540;
+      --blue:#2563eb;
+      --blue-dark:#1d4ed8;
+      --text:#334155;
+      --border:#e2e8f0;
+      --shadow:0 10px 30px rgba(15,23,42,0.08);
+      --radius:18px;
+      --max:1120px;
     }
+
     *{box-sizing:border-box}
-    body{font-family:Arial, sans-serif; background:var(--bg); margin:0; color:var(--text); line-height:1.65;}
-    header{background:var(--nav); color:#fff; padding:44px 20px; text-align:center;}
-    header h1{margin:0 0 6px; font-size:40px;}
-    .nav{margin-top:14px}
-    .nav a{color:#fff; margin:0 10px; text-decoration:none; font-weight:600;}
 
-    main{max-width:980px; margin:28px auto; padding:0 16px;}
-    .card{background:#fff; border-radius:14px; box-shadow:0 10px 25px rgba(10,37,64,.08); padding:34px 22px;}
-    h2{margin:0 0 10px;}
-    .grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; margin-top:18px}
-    .box{background:#fff; border-radius:12px; padding:16px; border:1px solid rgba(10,37,64,.08)}
-    .muted{color:#4b5563}
-    a{color:#0a2540; text-decoration:none; font-weight:700}
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:var(--bg);
+      color:var(--dark);
+      line-height:1.6;
+    }
 
-    footer{background:#0a2540; color:#fff; text-align:center; padding:18px; margin-top:26px}
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
 
-    @media (max-width:850px){
-      .grid{grid-template-columns:1fr}
+    .topbar{
+      background:var(--navy);
+      color:#fff;
+      padding:18px 20px;
+    }
+
+    .topbar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:800;
+    }
+
+    .nav{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      color:#fff;
+      font-weight:700;
+      opacity:.92;
+    }
+
+    .nav a:hover{
+      opacity:1;
+      text-decoration:underline;
+    }
+
+    .hero{
+      background:linear-gradient(135deg, #0a2540 0%, #123c6a 100%);
+      color:#fff;
+      padding:70px 20px;
+    }
+
+    .hero-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .hero h1{
+      margin:0 0 14px;
+      font-size:52px;
+      line-height:1.08;
+    }
+
+    .hero p{
+      margin:0 0 24px;
+      font-size:18px;
+      opacity:.95;
+      max-width:680px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 20px;
+      border-radius:12px;
+      font-weight:800;
+    }
+
+    .btn-primary{
+      background:#fff;
+      color:var(--navy);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,.12);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.25);
+    }
+
+    .hero-card{
+      background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:22px;
+      padding:24px;
+      backdrop-filter:blur(4px);
+    }
+
+    .hero-card span{
+      display:inline-block;
+      background:#dbeafe;
+      color:#1e3a8a;
+      font-size:12px;
+      font-weight:800;
+      padding:6px 10px;
+      border-radius:999px;
+      text-transform:uppercase;
+      letter-spacing:.3px;
+      margin-bottom:14px;
+    }
+
+    .hero-card h2{
+      margin:0 0 10px;
+      font-size:26px;
+      color:#fff;
+      line-height:1.2;
+    }
+
+    .hero-card p{
+      margin:0 0 16px;
+      font-size:16px;
+      opacity:.92;
+    }
+
+    main{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:34px 20px 50px;
+    }
+
+    .section{
+      margin-bottom:34px;
+    }
+
+    .section h2{
+      margin:0 0 8px;
+      font-size:34px;
+    }
+
+    .section p.lead{
+      margin:0 0 20px;
+      color:var(--text);
+      font-size:17px;
+    }
+
+    .featured{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:22px;
+      background:var(--white);
+      border-radius:24px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .featured-text{
+      padding:30px;
+    }
+
+    .tag{
+      display:inline-block;
+      background:#e0ecff;
+      color:#1d4ed8;
+      font-size:12px;
+      font-weight:800;
+      padding:7px 10px;
+      border-radius:999px;
+      text-transform:uppercase;
+      margin-bottom:14px;
+    }
+
+    .featured h3{
+      margin:0 0 14px;
+      font-size:34px;
+      line-height:1.15;
+    }
+
+    .featured p{
+      margin:0 0 18px;
+      color:var(--text);
+      font-size:17px;
+    }
+
+    .featured-visual{
+      background:linear-gradient(135deg, #2563eb, #0f172a);
+      color:#fff;
+      padding:30px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .featured-visual strong{
+      font-size:42px;
+      line-height:1;
+      margin-bottom:8px;
+    }
+
+    .featured-visual span{
+      font-size:16px;
+      opacity:.95;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:18px;
+    }
+
+    .card{
+      background:var(--white);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:24px;
+      border:1px solid var(--border);
+    }
+
+    .card h3{
+      margin:0 0 10px;
+      font-size:24px;
+    }
+
+    .card p{
+      margin:0 0 14px;
+      color:var(--text);
+    }
+
+    .link{
+      color:var(--blue);
+      font-weight:800;
+    }
+
+    .recent-grid{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:18px;
+    }
+
+    .recent{
+      background:var(--white);
+      border-radius:18px;
+      padding:22px;
+      box-shadow:var(--shadow);
+      border:1px solid var(--border);
+    }
+
+    .recent h3{
+      margin:0 0 8px;
+      font-size:22px;
+    }
+
+    .recent p{
+      margin:0;
+      color:var(--text);
+    }
+
+    footer{
+      background:var(--navy);
+      color:#fff;
+      text-align:center;
+      padding:28px 20px;
+      margin-top:20px;
+    }
+
+    footer a{
+      color:#fff;
+      font-weight:700;
+      margin:0 8px;
+    }
+
+    @media (max-width: 920px){
+      .hero-inner,
+      .featured,
+      .grid-3,
+      .recent-grid{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:40px;
+      }
+
+      .featured h3{
+        font-size:28px;
+      }
+    }
+
+    @media (max-width: 600px){
+      .hero{
+        padding:50px 20px;
+      }
+
+      .hero h1{
+        font-size:32px;
+      }
+
+      .section h2{
+        font-size:28px;
+      }
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Libertad Financiera</h1>
-    <p>Guías simples para ganar dinero online y crear ingresos pasivos.</p>
 
-    <p class="nav">
-      <a href="index.html">Inicio</a>
-      <a href="como-ganar-dinero-online.html">Ganar dinero</a>
-      <a href="ingresos-pasivos.html">Ingresos pasivos</a>
-      <a href="que-es-adsense.html">AdSense</a>
-    </p>
+  <header>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="logo">Libertad Financiera</div>
+        <nav class="nav">
+          <a href="index.html">Inicio</a>
+          <a href="como-ganar-dinero-online.html">Ganar dinero</a>
+          <a href="ingresos-pasivos.html">Ingresos pasivos</a>
+          <a href="que-es-adsense.html">AdSense</a>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1>Ganar dinero online sin humo y con estrategia</h1>
+          <p>
+            Aprende a crear ingresos online, monetizar una web con AdSense
+            y construir un proyecto rentable paso a paso.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="como-ganar-dinero-online.html">Ver artículo principal</a>
+            <a class="btn btn-secondary" href="que-es-adsense.html">Aprender AdSense</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <span>Artículo principal</span>
+          <h2>Cómo ganar dinero online sin invertir en 2026</h2>
+          <p>
+            Freelance, afiliados, blogs, contenido y métodos reales para empezar desde casa.
+          </p>
+          <a class="btn btn-primary" href="como-ganar-dinero-online.html">Leer ahora</a>
+        </div>
+      </div>
+    </section>
   </header>
 
   <main>
-    <section class="card">
-
-      <h2>Bienvenido</h2>
-      <p class="muted">
-        Aprende a ganar dinero online, crear ingresos pasivos y empezar desde cero.
+    <section class="section">
+      <h2>Empieza por aquí</h2>
+      <p class="lead">
+        La mejor manera de avanzar es centrarte primero en un artículo fuerte y luego explorar las categorías principales.
       </p>
 
-      <h2>Guías principales</h2>
-
-      <div class="grid">
-        <div class="box">
-          <h3><a href="como-ganar-dinero-online.html">Cómo ganar dinero online</a></h3>
-          <p class="muted">Métodos reales para empezar sin invertir.</p>
-          <a href="como-ganar-dinero-online.html">Leer →</a>
+      <div class="featured">
+        <div class="featured-text">
+          <span class="tag">Destacado</span>
+          <h3>Cómo ganar dinero online sin invertir en 2026</h3>
+          <p>
+            Una guía completa para entender qué opciones existen de verdad,
+            cuáles merecen la pena y cómo empezar aunque partas de cero.
+          </p>
+          <a class="btn btn-primary" href="como-ganar-dinero-online.html">Leer artículo completo</a>
         </div>
 
-        <div class="box">
-          <h3><a href="ingresos-pasivos.html">Ingresos pasivos</a></h3>
-          <p class="muted">Ideas para generar dinero a largo plazo.</p>
-          <a href="ingresos-pasivos.html">Ver →</a>
-        </div>
-
-        <div class="box">
-          <h3><a href="que-es-adsense.html">Qué es AdSense</a></h3>
-          <p class="muted">Cómo funciona y cuánto paga.</p>
-          <a href="que-es-adsense.html">Aprender →</a>
+        <div class="featured-visual">
+          <strong>2026</strong>
+          <span>Ideas reales, pasos simples y enfoque práctico para monetizar online.</span>
         </div>
       </div>
+    </section>
 
-      <!-- 🔥 ARTÍCULO DESTACADO -->
-      <h2 style="margin-top:30px;">Artículo destacado</h2>
+    <section class="section">
+      <h2>Categorías principales</h2>
+      <p class="lead">
+        Accede a los temas más importantes de la web sin repetir el mismo contenido.
+      </p>
 
-      <div class="box">
-        <h3>
-          <a href="como-ganar-dinero-online.html">
-            Cómo ganar dinero online sin invertir en 2026
-          </a>
-        </h3>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Ingresos pasivos</h3>
+          <p>Ideas para construir fuentes de dinero a largo plazo y no depender solo de tu tiempo.</p>
+          <a class="link" href="ingresos-pasivos.html">Ver categoría →</a>
+        </div>
 
-        <p class="muted">
-          Descubre métodos reales como freelance, afiliados, blogs y redes sociales
-          para generar ingresos desde casa sin necesidad de inversión inicial.
-        </p>
+        <div class="card">
+          <h3>AdSense</h3>
+          <p>Qué es, cómo funciona y qué necesitas para monetizar una página web.</p>
+          <a class="link" href="que-es-adsense.html">Ir a AdSense →</a>
+        </div>
 
-        <a href="como-ganar-dinero-online.html">Leer artículo completo →</a>
+        <div class="card">
+          <h3>Crear un blog rentable</h3>
+          <p>Cómo montar una web con contenido útil y potencial real de ingresos.</p>
+          <a class="link" href="crear-blog-rentable.html">Leer guía →</a>
+        </div>
       </div>
+    </section>
 
-      <!-- MÁS ARTÍCULOS -->
-      <h2 style="margin-top:25px;">Más artículos</h2>
+    <section class="section">
+      <h2>Artículos recientes</h2>
+      <p class="lead">
+        Sigue leyendo más guías relacionadas con monetización, blogs y trabajo desde casa.
+      </p>
 
-      <ul>
-        <li><a href="crear-blog-rentable.html">Cómo crear un blog rentable</a></li>
-        <li><a href="crear-web-para-ganar-dinero.html">Crear una web para ganar dinero</a></li>
-        <li><a href="ganar-dinero-desde-casa.html">Cómo ganar dinero desde casa</a></li>
-        <li><a href="cuanto-paga-adsense.html">Cuánto paga Google AdSense</a></li>
-      </ul>
+      <div class="recent-grid">
+        <div class="recent">
+          <h3><a href="crear-web-para-ganar-dinero.html">Crear una web para ganar dinero</a></h3>
+          <p>Base técnica y estructura recomendada para empezar con una web monetizable.</p>
+        </div>
 
+        <div class="recent">
+          <h3><a href="ganar-dinero-desde-casa.html">Cómo ganar dinero desde casa</a></h3>
+          <p>Opciones reales para empezar online con poco presupuesto y de forma sencilla.</p>
+        </div>
+
+        <div class="recent">
+          <h3><a href="cuanto-paga-adsense.html">Cuánto paga Google AdSense</a></h3>
+          <p>Qué factores influyen en las ganancias y qué puedes esperar al principio.</p>
+        </div>
+
+        <div class="recent">
+          <h3><a href="privacidad.html">Política de privacidad</a></h3>
+          <p>Documento legal importante para transmitir confianza y preparar la web para AdSense.</p>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -124,5 +474,6 @@
     </p>
     <p>© 2026 Libertad Financiera</p>
   </footer>
+
 </body>
 </html>
