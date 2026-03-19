@@ -22,32 +22,21 @@
     *{box-sizing:border-box}
     body{font-family:Arial, sans-serif; background:var(--bg); margin:0; color:var(--text); line-height:1.65;}
     header{background:var(--nav); color:#fff; padding:44px 20px; text-align:center;}
-    header h1{margin:0 0 6px; font-size:40px; letter-spacing:.2px}
-    header p{margin:0; opacity:.9}
+    header h1{margin:0 0 6px; font-size:40px;}
     .nav{margin-top:14px}
-    .nav a{color:#fff; margin:0 10px; text-decoration:none; font-weight:600; opacity:.95}
-    .nav a:hover{opacity:1; text-decoration:underline}
+    .nav a{color:#fff; margin:0 10px; text-decoration:none; font-weight:600;}
 
     main{max-width:980px; margin:28px auto; padding:0 16px;}
-    .card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:34px 22px;}
-    h2{margin:0 0 10px; font-size:26px}
-    p{margin:10px 0}
-    ul{margin:10px 0 0 18px}
-    li{margin:6px 0}
+    .card{background:#fff; border-radius:14px; box-shadow:0 10px 25px rgba(10,37,64,.08); padding:34px 22px;}
+    h2{margin:0 0 10px;}
     .grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; margin-top:18px}
     .box{background:#fff; border-radius:12px; padding:16px; border:1px solid rgba(10,37,64,.08)}
-    .box h3{margin:0 0 8px; font-size:18px}
-    .muted{color:var(--muted)}
-    a{color:var(--nav); text-decoration:none; font-weight:700}
-    a:hover{text-decoration:underline}
+    .muted{color:#4b5563}
+    a{color:#0a2540; text-decoration:none; font-weight:700}
 
-    footer{background:var(--nav); color:#fff; text-align:center; padding:18px 16px; margin-top:26px}
-    footer a{color:#fff; text-decoration:none; font-weight:700}
-    footer a:hover{text-decoration:underline}
-    .sep{opacity:.55; margin:0 8px}
+    footer{background:#0a2540; color:#fff; text-align:center; padding:18px; margin-top:26px}
 
     @media (max-width:850px){
-      header h1{font-size:34px}
       .grid{grid-template-columns:1fr}
     }
   </style>
@@ -56,10 +45,11 @@
 <body>
   <header>
     <h1>Libertad Financiera</h1>
-    <p>Guías simples para ganar dinero online, crear ingresos pasivos y empezar con AdSense.</p>
+    <p>Guías simples para ganar dinero online y crear ingresos pasivos.</p>
+
     <p class="nav">
       <a href="index.html">Inicio</a>
-      <a href="ganar-dinero-internet.html">Ganar dinero</a>
+      <a href="como-ganar-dinero-online.html">Ganar dinero</a>
       <a href="ingresos-pasivos.html">Ingresos pasivos</a>
       <a href="que-es-adsense.html">AdSense</a>
     </p>
@@ -67,39 +57,55 @@
 
   <main>
     <section class="card">
+
       <h2>Bienvenido</h2>
       <p class="muted">
-        Esta es mi web para aprender y compartir cómo ganar dinero, ahorrar y crear ingresos online.
-        Aquí encontrarás ideas claras, sin humo, para empezar paso a paso.
+        Aprende a ganar dinero online, crear ingresos pasivos y empezar desde cero.
       </p>
 
-      <h2>Qué encontrarás aquí</h2>
-      <ul>
-        <li>Cómo ganar dinero por Internet (métodos reales y escalables)</li>
-        <li>Ideas de ingresos pasivos y cómo empezar</li>
-        <li>Cómo usar Google AdSense para monetizar</li>
-        <li>Consejos básicos de educación financiera</li>
-      </ul>
+      <h2>Guías principales</h2>
 
       <div class="grid">
         <div class="box">
-          <h3>Guía: Ganar dinero</h3>
-          <p class="muted">Métodos probados para empezar en 2025.</p>
-          <a href="ganar-dinero-internet.html">Leer guía →</a>
+          <h3><a href="como-ganar-dinero-online.html">Cómo ganar dinero online</a></h3>
+          <p class="muted">Métodos reales para empezar sin invertir.</p>
+          <a href="como-ganar-dinero-online.html">Leer →</a>
         </div>
+
         <div class="box">
-          <h3>Ingresos pasivos</h3>
-          <p class="muted">Ideas y ejemplos para construir ingresos a largo plazo.</p>
-          <a href="ingresos-pasivos.html">Ver ideas →</a>
+          <h3><a href="ingresos-pasivos.html">Ingresos pasivos</a></h3>
+          <p class="muted">Ideas para generar dinero a largo plazo.</p>
+          <a href="ingresos-pasivos.html">Ver →</a>
         </div>
+
         <div class="box">
-          <h3>Qué es AdSense</h3>
-          <p class="muted">Cómo funciona, cuánto paga y requisitos básicos.</p>
+          <h3><a href="que-es-adsense.html">Qué es AdSense</a></h3>
+          <p class="muted">Cómo funciona y cuánto paga.</p>
           <a href="que-es-adsense.html">Aprender →</a>
         </div>
       </div>
 
-      <h2 style="margin-top:22px;">Más artículos</h2>
+      <!-- 🔥 ARTÍCULO DESTACADO -->
+      <h2 style="margin-top:30px;">Artículo destacado</h2>
+
+      <div class="box">
+        <h3>
+          <a href="como-ganar-dinero-online.html">
+            Cómo ganar dinero online sin invertir en 2026
+          </a>
+        </h3>
+
+        <p class="muted">
+          Descubre métodos reales como freelance, afiliados, blogs y redes sociales
+          para generar ingresos desde casa sin necesidad de inversión inicial.
+        </p>
+
+        <a href="como-ganar-dinero-online.html">Leer artículo completo →</a>
+      </div>
+
+      <!-- MÁS ARTÍCULOS -->
+      <h2 style="margin-top:25px;">Más artículos</h2>
+
       <ul>
         <li><a href="crear-blog-rentable.html">Cómo crear un blog rentable</a></li>
         <li><a href="crear-web-para-ganar-dinero.html">Crear una web para ganar dinero</a></li>
@@ -107,17 +113,16 @@
         <li><a href="cuanto-paga-adsense.html">Cuánto paga Google AdSense</a></li>
       </ul>
 
-      <p class="muted" style="margin-top:16px;">Muy pronto añadiré más artículos.</p>
     </section>
   </main>
 
   <footer>
     <p>
-      <a href="privacidad.html">Privacidad</a><span class="sep">|</span>
-      <a href="cookies.html">Cookies</a><span class="sep">|</span>
+      <a href="privacidad.html">Privacidad</a> |
+      <a href="cookies.html">Cookies</a> |
       <a href="aviso-legal.html">Aviso legal</a>
     </p>
-    <p>© 2025 Libertad Financiera</p>
+    <p>© 2026 Libertad Financiera</p>
   </footer>
 </body>
 </html>
