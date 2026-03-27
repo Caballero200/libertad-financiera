@@ -2,91 +2,478 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="asKFQ79NVRK2QdkJTcGNzvWs0wGt5XOCp5WML_vvWX0" />
   <title>Crear una web para ganar dinero | Libertad Financiera</title>
-  <meta name="description" content="Cómo crear una web que genere ingresos: contenido, SEO, estructura y monetización con AdSense y afiliados." />
+  <meta name="description" content="Aprende cómo crear una web que genere ingresos con contenido útil, estructura correcta, SEO básico y monetización con AdSense, afiliados y productos digitales." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9161620238567586"
     crossorigin="anonymous"></script>
 
   <style>
-    :root{--nav:#0a2540;--bg:#f4f6f8;--text:#0b1220;--muted:#4b5563;--card:#fff;--radius:14px;--shadow:0 10px 25px rgba(10,37,64,.08)}
+    :root{
+      --bg:#f5f7fb;
+      --white:#ffffff;
+      --dark:#0f172a;
+      --navy:#0a2540;
+      --blue:#2563eb;
+      --blue-dark:#1d4ed8;
+      --text:#334155;
+      --border:#e2e8f0;
+      --shadow:0 10px 30px rgba(15,23,42,0.08);
+      --radius:18px;
+      --max:1120px;
+    }
+
     *{box-sizing:border-box}
-    body{font-family:Arial,sans-serif;background:var(--bg);margin:0;color:var(--text);line-height:1.75}
-    header{background:var(--nav);color:#fff;padding:44px 20px;text-align:center}
-    header h1{margin:0 0 6px;font-size:40px}
-    .nav{margin-top:14px}
-    .nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:600;opacity:.95}
-    .nav a:hover{opacity:1;text-decoration:underline}
-    main{max-width:980px;margin:28px auto;padding:0 16px}
-    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:34px 22px}
-    h2{margin:22px 0 8px;font-size:24px}
-    p{margin:10px 0}
-    ul{margin:10px 0 0 18px}
-    li{margin:6px 0}
-    .muted{color:var(--muted)}
-    footer{background:var(--nav);color:#fff;text-align:center;padding:18px 16px;margin-top:26px}
-    footer a{color:#fff;text-decoration:none;font-weight:700}
-    footer a:hover{text-decoration:underline}
-    .sep{opacity:.55;margin:0 8px}
-    @media (max-width:850px){header h1{font-size:34px}}
+
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:var(--bg);
+      color:var(--dark);
+      line-height:1.6;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .topbar{
+      background:var(--navy);
+      color:#fff;
+      padding:18px 20px;
+    }
+
+    .topbar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:800;
+    }
+
+    .nav{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      color:#fff;
+      font-weight:700;
+      opacity:.92;
+    }
+
+    .nav a:hover{
+      opacity:1;
+      text-decoration:underline;
+    }
+
+    .hero{
+      background:linear-gradient(135deg, #0a2540 0%, #123c6a 100%);
+      color:#fff;
+      padding:70px 20px;
+    }
+
+    .hero-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .hero h1{
+      margin:0 0 14px;
+      font-size:50px;
+      line-height:1.08;
+    }
+
+    .hero p{
+      margin:0 0 24px;
+      font-size:18px;
+      opacity:.95;
+      max-width:700px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 20px;
+      border-radius:12px;
+      font-weight:800;
+    }
+
+    .btn-primary{
+      background:#fff;
+      color:var(--navy);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,.12);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.25);
+    }
+
+    .hero-card{
+      background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:22px;
+      padding:24px;
+      backdrop-filter:blur(4px);
+    }
+
+    .hero-card span{
+      display:inline-block;
+      background:#dbeafe;
+      color:#1e3a8a;
+      font-size:12px;
+      font-weight:800;
+      padding:6px 10px;
+      border-radius:999px;
+      text-transform:uppercase;
+      letter-spacing:.3px;
+      margin-bottom:14px;
+    }
+
+    .hero-card h2{
+      margin:0 0 10px;
+      font-size:26px;
+      color:#fff;
+      line-height:1.2;
+    }
+
+    .hero-card p{
+      margin:0 0 16px;
+      font-size:16px;
+      opacity:.92;
+    }
+
+    main{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:34px 20px 50px;
+    }
+
+    .section{
+      margin-bottom:34px;
+    }
+
+    .section h2{
+      margin:0 0 8px;
+      font-size:34px;
+    }
+
+    .section p.lead{
+      margin:0 0 20px;
+      color:var(--text);
+      font-size:17px;
+      max-width:850px;
+    }
+
+    .article-layout{
+      display:grid;
+      grid-template-columns:.8fr 1.2fr;
+      gap:22px;
+      align-items:start;
+    }
+
+    .card{
+      background:var(--white);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:24px;
+      border:1px solid var(--border);
+    }
+
+    .tag{
+      display:inline-block;
+      background:#e0ecff;
+      color:#1d4ed8;
+      font-size:12px;
+      font-weight:800;
+      padding:7px 10px;
+      border-radius:999px;
+      text-transform:uppercase;
+      margin-bottom:14px;
+    }
+
+    .summary-list{
+      display:grid;
+      gap:14px;
+    }
+
+    .summary-item{
+      padding:16px 0;
+      border-bottom:1px solid var(--border);
+    }
+
+    .summary-item:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+
+    .summary-item strong{
+      display:block;
+      margin-bottom:6px;
+      font-size:18px;
+    }
+
+    .summary-item p{
+      margin:0;
+      color:var(--text);
+    }
+
+    .article h2{
+      margin:0 0 18px;
+      font-size:32px;
+      line-height:1.2;
+    }
+
+    .article-block{
+      padding:18px 0;
+      border-bottom:1px solid var(--border);
+    }
+
+    .article-block:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+
+    .article-block h3{
+      margin:0 0 10px;
+      font-size:24px;
+    }
+
+    .article-block p,
+    .article-block li{
+      color:var(--text);
+      font-size:16px;
+    }
+
+    .article-block p{
+      margin:0;
+    }
+
+    .article-block ul{
+      margin:12px 0 0 20px;
+      padding:0;
+    }
+
+    .article-block li{
+      margin:8px 0;
+    }
+
+    .article-note{
+      margin-top:22px;
+      padding:18px;
+      background:#f8fbff;
+      border:1px solid var(--border);
+      border-radius:14px;
+      color:var(--text);
+    }
+
+    .article-note strong{
+      color:var(--dark);
+    }
+
+    footer{
+      background:var(--navy);
+      color:#fff;
+      text-align:center;
+      padding:28px 20px;
+      margin-top:20px;
+    }
+
+    footer a{
+      color:#fff;
+      font-weight:700;
+      margin:0 8px;
+    }
+
+    @media (max-width: 920px){
+      .hero-inner,
+      .article-layout{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:40px;
+      }
+
+      .section h2{
+        font-size:30px;
+      }
+
+      .article h2{
+        font-size:28px;
+      }
+    }
+
+    @media (max-width: 600px){
+      .hero{
+        padding:50px 20px;
+      }
+
+      .hero h1{
+        font-size:32px;
+      }
+
+      .section h2{
+        font-size:27px;
+      }
+
+      .article-block h3{
+        font-size:22px;
+      }
+    }
   </style>
 </head>
-
 <body>
+
   <header>
-    <h1>Libertad Financiera</h1>
-    <p class="nav">
-      <a href="index.html">Inicio</a>
-      <a href="ganar-dinero-internet.html">Ganar dinero</a>
-      <a href="ingresos-pasivos.html">Ingresos pasivos</a>
-      <a href="que-es-adsense.html">AdSense</a>
-    </p>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="logo">Libertad Financiera</div>
+        <nav class="nav">
+          <a href="index.html">Inicio</a>
+          <a href="ganar-dinero-internet.html">Ganar dinero</a>
+          <a href="ingresos-pasivos.html">Ingresos pasivos</a>
+          <a href="que-es-adsense.html">AdSense</a>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1>Crear una web para ganar dinero</h1>
+          <p>
+            Descubre cómo montar una web con potencial real de ingresos
+            combinando estructura clara, contenido útil, SEO básico y una monetización bien planteada.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="index.html">Volver al inicio</a>
+            <a class="btn btn-secondary" href="que-es-adsense.html">Aprender AdSense</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <span>Guía esencial</span>
+          <h2>Contenido primero, ingresos después</h2>
+          <p>
+            Una web puede monetizarse con anuncios, afiliados o productos propios, pero el tráfico útil es la base de todo.
+          </p>
+          <a class="btn btn-primary" href="crear-blog-rentable.html">Ver guía relacionada</a>
+        </div>
+      </div>
+    </section>
   </header>
 
   <main>
-    <section class="card">
-      <h2>Crear una web para ganar dinero</h2>
-      <p class="muted">
-        Una web puede generar ingresos con anuncios (AdSense), afiliados o productos digitales. La clave es el tráfico desde Google.
+    <section class="section">
+      <h2>Cómo construir una web monetizable</h2>
+      <p class="lead">
+        Una web puede generar ingresos con AdSense, afiliación o productos digitales, pero para conseguirlo necesita una base clara: estructura simple, contenido útil y tráfico desde Google.
       </p>
 
-      <h2>1) Estructura mínima</h2>
-      <ul>
-        <li>Inicio (resumen + enlaces a artículos)</li>
-        <li>3–10 artículos iniciales (respondiendo búsquedas)</li>
-        <li>Páginas legales: privacidad, cookies y aviso legal</li>
-      </ul>
+      <div class="article-layout">
+        <div class="card">
+          <span class="tag">Resumen rápido</span>
 
-      <h2>2) Publica contenido útil</h2>
-      <p>Haz artículos que resuelvan un problema: guías, listas, tutoriales, comparativas y pasos.</p>
+          <div class="summary-list">
+            <div class="summary-item">
+              <strong>Base mínima</strong>
+              <p>Inicio, varios artículos útiles y páginas legales bien visibles.</p>
+            </div>
 
-      <h2>3) SEO (lo básico que más importa)</h2>
-      <ul>
-        <li>Un H1 claro y un título con intención</li>
-        <li>Subtítulos (H2) para ordenar</li>
-        <li>Meta descripción</li>
-        <li>Enlaces internos entre artículos</li>
-      </ul>
+            <div class="summary-item">
+              <strong>Prioridad</strong>
+              <p>Publicar contenido que resuelva dudas y atraiga búsquedas reales.</p>
+            </div>
 
-      <h2>4) Monetización</h2>
-      <ul>
-        <li>AdSense: anuncios automáticos cuando te aprueben</li>
-        <li>Afiliados: comisiones por recomendar</li>
-        <li>Productos: ebooks, plantillas, cursos</li>
-      </ul>
+            <div class="summary-item">
+              <strong>SEO esencial</strong>
+              <p>Títulos claros, subtítulos, meta description y enlaces internos.</p>
+            </div>
 
-      <p class="muted">Consejo: primero contenido. Luego diseño y optimización.</p>
+            <div class="summary-item">
+              <strong>Ingresos posibles</strong>
+              <p>AdSense, afiliados y productos digitales según el tipo de web.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card article">
+          <h2>Pasos para crear una web que pueda generar ingresos</h2>
+
+          <div class="article-block">
+            <h3>1. Define una estructura mínima</h3>
+            <ul>
+              <li>Una página de inicio con resumen y enlaces a contenidos importantes.</li>
+              <li>Entre 3 y 10 artículos iniciales pensados para responder búsquedas concretas.</li>
+              <li>Páginas legales como privacidad, cookies y aviso legal.</li>
+            </ul>
+          </div>
+
+          <div class="article-block">
+            <h3>2. Publica contenido útil</h3>
+            <p>
+              Crea artículos que solucionen un problema real. Las guías, tutoriales, comparativas, listas y explicaciones paso a paso suelen funcionar bien cuando responden a una intención clara de búsqueda.
+            </p>
+          </div>
+
+          <div class="article-block">
+            <h3>3. Aplica el SEO básico que más importa</h3>
+            <ul>
+              <li>Usa un H1 claro y un título alineado con lo que busca el usuario.</li>
+              <li>Ordena el contenido con subtítulos H2 fáciles de seguir.</li>
+              <li>Incluye una meta description útil y natural.</li>
+              <li>Conecta tus artículos mediante enlaces internos relacionados.</li>
+            </ul>
+          </div>
+
+          <div class="article-block">
+            <h3>4. Añade monetización cuando tengas base</h3>
+            <ul>
+              <li>AdSense para mostrar anuncios automáticos tras la aprobación.</li>
+              <li>Marketing de afiliados para ganar comisiones por recomendaciones.</li>
+              <li>Productos propios como ebooks, plantillas o cursos.</li>
+            </ul>
+          </div>
+
+          <div class="article-note">
+            <strong>Consejo:</strong> céntrate primero en crear buen contenido. El diseño y la optimización importan, pero llegan después de tener una base útil y publicable.
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>
-      <a href="privacidad.html">Privacidad</a><span class="sep">|</span>
-      <a href="cookies.html">Cookies</a><span class="sep">|</span>
+      <a href="privacidad.html">Privacidad</a> |
+      <a href="cookies.html">Cookies</a> |
       <a href="aviso-legal.html">Aviso legal</a>
     </p>
-    <p>© 2025 Libertad Financiera</p>
+    <p>© 2026 Libertad Financiera</p>
   </footer>
+
 </body>
 </html>
