@@ -2,76 +2,464 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="asKFQ79NVRK2QdkJTcGNzvWs0wGt5XOCp5WML_vvWX0" />
   <title>Política de cookies | Libertad Financiera</title>
-  <meta name="description" content="Política de cookies de Libertad Financiera." />
+  <meta name="description" content="Consulta la política de cookies de Libertad Financiera y conoce qué tipos de cookies puede utilizar este sitio web." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9161620238567586"
     crossorigin="anonymous"></script>
 
   <style>
-    :root{--nav:#0a2540;--bg:#f4f6f8;--text:#0b1220;--muted:#4b5563;--card:#fff;--radius:14px;--shadow:0 10px 25px rgba(10,37,64,.08)}
+    :root{
+      --bg:#f5f7fb;
+      --white:#ffffff;
+      --dark:#0f172a;
+      --navy:#0a2540;
+      --blue:#2563eb;
+      --blue-dark:#1d4ed8;
+      --text:#334155;
+      --border:#e2e8f0;
+      --shadow:0 10px 30px rgba(15,23,42,0.08);
+      --radius:18px;
+      --max:1120px;
+    }
+
     *{box-sizing:border-box}
-    body{font-family:Arial,sans-serif;background:var(--bg);margin:0;color:var(--text);line-height:1.75}
-    header{background:var(--nav);color:#fff;padding:44px 20px;text-align:center}
-    header h1{margin:0 0 6px;font-size:40px}
-    .nav{margin-top:14px}
-    .nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:600;opacity:.95}
-    .nav a:hover{opacity:1;text-decoration:underline}
-    main{max-width:980px;margin:28px auto;padding:0 16px}
-    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:34px 22px}
-    h2{margin:22px 0 8px;font-size:24px}
-    p{margin:10px 0}
-    ul{margin:10px 0 0 18px}
-    li{margin:6px 0}
-    .muted{color:var(--muted)}
-    footer{background:var(--nav);color:#fff;text-align:center;padding:18px 16px;margin-top:26px}
-    footer a{color:#fff;text-decoration:none;font-weight:700}
-    footer a:hover{text-decoration:underline}
-    .sep{opacity:.55;margin:0 8px}
-    @media (max-width:850px){header h1{font-size:34px}}
+
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:var(--bg);
+      color:var(--dark);
+      line-height:1.6;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .topbar{
+      background:var(--navy);
+      color:#fff;
+      padding:18px 20px;
+    }
+
+    .topbar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:800;
+    }
+
+    .nav{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      color:#fff;
+      font-weight:700;
+      opacity:.92;
+    }
+
+    .nav a:hover{
+      opacity:1;
+      text-decoration:underline;
+    }
+
+    .hero{
+      background:linear-gradient(135deg, #0a2540 0%, #123c6a 100%);
+      color:#fff;
+      padding:60px 20px;
+    }
+
+    .hero-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .hero h1{
+      margin:0 0 14px;
+      font-size:48px;
+      line-height:1.08;
+    }
+
+    .hero p{
+      margin:0 0 22px;
+      font-size:18px;
+      opacity:.95;
+      max-width:720px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 20px;
+      border-radius:12px;
+      font-weight:800;
+    }
+
+    .btn-primary{
+      background:#fff;
+      color:var(--navy);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,.12);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.25);
+    }
+
+    .hero-card{
+      background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:22px;
+      padding:24px;
+      backdrop-filter:blur(4px);
+    }
+
+    .hero-card span{
+      display:inline-block;
+      background:#dbeafe;
+      color:#1e3a8a;
+      font-size:12px;
+      font-weight:800;
+      padding:6px 10px;
+      border-radius:999px;
+      text-transform:uppercase;
+      letter-spacing:.3px;
+      margin-bottom:14px;
+    }
+
+    .hero-card h2{
+      margin:0 0 10px;
+      font-size:26px;
+      color:#fff;
+      line-height:1.2;
+    }
+
+    .hero-card p{
+      margin:0;
+      font-size:16px;
+      opacity:.92;
+    }
+
+    main{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:34px 20px 50px;
+    }
+
+    .section{
+      margin-bottom:34px;
+    }
+
+    .section h2{
+      margin:0 0 8px;
+      font-size:34px;
+    }
+
+    .section p.lead{
+      margin:0 0 20px;
+      color:var(--text);
+      font-size:17px;
+      max-width:850px;
+    }
+
+    .cookies-layout{
+      display:grid;
+      grid-template-columns:.85fr 1.15fr;
+      gap:22px;
+      align-items:start;
+    }
+
+    .card{
+      background:var(--white);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:26px;
+      border:1px solid var(--border);
+    }
+
+    .tag{
+      display:inline-block;
+      background:#e0ecff;
+      color:#1d4ed8;
+      font-size:12px;
+      font-weight:800;
+      padding:7px 10px;
+      border-radius:999px;
+      text-transform:uppercase;
+      margin-bottom:14px;
+    }
+
+    .info-list{
+      display:grid;
+      gap:14px;
+    }
+
+    .info-item{
+      padding:16px 0;
+      border-bottom:1px solid var(--border);
+    }
+
+    .info-item:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+
+    .info-item strong{
+      display:block;
+      margin-bottom:6px;
+      font-size:18px;
+    }
+
+    .info-item p{
+      margin:0;
+      color:var(--text);
+    }
+
+    .policy-content h2{
+      margin:0 0 12px;
+      font-size:28px;
+      line-height:1.2;
+    }
+
+    .policy-block{
+      padding:18px 0;
+      border-bottom:1px solid var(--border);
+    }
+
+    .policy-block:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+
+    .policy-block h3{
+      margin:0 0 10px;
+      font-size:24px;
+    }
+
+    .policy-block p,
+    .policy-block li{
+      color:var(--text);
+      font-size:16px;
+    }
+
+    .policy-block p{
+      margin:0;
+    }
+
+    .policy-block ul{
+      margin:12px 0 0 20px;
+      padding:0;
+    }
+
+    .policy-block li{
+      margin:8px 0;
+    }
+
+    .note-box{
+      margin-top:22px;
+      padding:18px;
+      background:#f8fbff;
+      border:1px solid var(--border);
+      border-radius:14px;
+      color:var(--text);
+    }
+
+    .note-box strong{
+      color:var(--dark);
+    }
+
+    footer{
+      background:var(--navy);
+      color:#fff;
+      text-align:center;
+      padding:28px 20px;
+      margin-top:20px;
+    }
+
+    footer a{
+      color:#fff;
+      font-weight:700;
+      margin:0 8px;
+    }
+
+    @media (max-width: 920px){
+      .hero-inner,
+      .cookies-layout{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:38px;
+      }
+
+      .section h2{
+        font-size:30px;
+      }
+
+      .policy-content h2{
+        font-size:26px;
+      }
+    }
+
+    @media (max-width: 600px){
+      .hero{
+        padding:48px 20px;
+      }
+
+      .hero h1{
+        font-size:31px;
+      }
+
+      .section h2{
+        font-size:27px;
+      }
+
+      .policy-block h3{
+        font-size:22px;
+      }
+    }
   </style>
 </head>
-
 <body>
+
   <header>
-    <h1>Libertad Financiera</h1>
-    <p class="nav">
-      <a href="index.html">Inicio</a>
-      <a href="ganar-dinero-internet.html">Ganar dinero</a>
-      <a href="ingresos-pasivos.html">Ingresos pasivos</a>
-      <a href="que-es-adsense.html">AdSense</a>
-    </p>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="logo">Libertad Financiera</div>
+        <nav class="nav">
+          <a href="index.html">Inicio</a>
+          <a href="ganar-dinero-internet.html">Ganar dinero</a>
+          <a href="ingresos-pasivos.html">Ingresos pasivos</a>
+          <a href="que-es-adsense.html">AdSense</a>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1>Política de cookies</h1>
+          <p>
+            Conoce qué son las cookies, qué tipos puede utilizar esta web
+            y cómo puedes gestionarlas o desactivarlas desde tu navegador.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="index.html">Volver al inicio</a>
+            <a class="btn btn-secondary" href="privacidad.html">Ver privacidad</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <span>Transparencia</span>
+          <h2>Uso de cookies en el sitio</h2>
+          <p>
+            Esta página resume de forma clara el papel de las cookies técnicas y publicitarias dentro de la web.
+          </p>
+        </div>
+      </div>
+    </section>
   </header>
 
   <main>
-    <section class="card">
-      <h2>Política de cookies</h2>
-      <p class="muted">Última actualización: 2025</p>
+    <section class="section">
+      <h2>Información sobre cookies</h2>
+      <p class="lead">
+        Esta política explica de forma sencilla cómo funcionan las cookies en el sitio y qué opciones tienes para administrarlas.
+      </p>
 
-      <h2>¿Qué son las cookies?</h2>
-      <p>Las cookies son pequeños archivos que se guardan en tu navegador para recordar información y mejorar tu experiencia.</p>
+      <div class="cookies-layout">
+        <div class="card">
+          <span class="tag">Resumen</span>
 
-      <h2>Cookies que puede usar este sitio</h2>
-      <ul>
-        <li><b>Cookies técnicas</b> (necesarias para el funcionamiento básico)</li>
-        <li><b>Cookies de publicidad</b> (por ejemplo Google AdSense)</li>
-      </ul>
+          <div class="info-list">
+            <div class="info-item">
+              <strong>Última actualización</strong>
+              <p>2025</p>
+            </div>
 
-      <h2>Cómo desactivarlas</h2>
-      <p>Puedes bloquear o borrar cookies desde la configuración de tu navegador.</p>
+            <div class="info-item">
+              <strong>Finalidad</strong>
+              <p>Explicar qué cookies pueden utilizarse y cómo afectan a la experiencia del usuario.</p>
+            </div>
 
-      <p class="muted">Nota: desactivar cookies puede afectar al funcionamiento o a la personalización de anuncios.</p>
+            <div class="info-item">
+              <strong>Tipos principales</strong>
+              <p>Cookies técnicas necesarias y cookies de publicidad como las relacionadas con Google AdSense.</p>
+            </div>
+
+            <div class="info-item">
+              <strong>Control del usuario</strong>
+              <p>Las cookies pueden bloquearse o eliminarse desde la configuración del navegador.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card policy-content">
+          <h2>Texto de la política de cookies</h2>
+
+          <div class="policy-block">
+            <h3>¿Qué son las cookies?</h3>
+            <p>
+              Las cookies son pequeños archivos que se guardan en tu navegador para recordar información y mejorar tu experiencia.
+            </p>
+          </div>
+
+          <div class="policy-block">
+            <h3>Cookies que puede usar este sitio</h3>
+            <ul>
+              <li><strong>Cookies técnicas</strong> necesarias para el funcionamiento básico del sitio web.</li>
+              <li><strong>Cookies de publicidad</strong> utilizadas por servicios como Google AdSense para mostrar anuncios.</li>
+            </ul>
+          </div>
+
+          <div class="policy-block">
+            <h3>Cómo desactivarlas</h3>
+            <p>
+              Puedes bloquear o borrar cookies desde la configuración de tu navegador.
+            </p>
+          </div>
+
+          <div class="note-box">
+            <strong>Nota:</strong> desactivar cookies puede afectar al funcionamiento del sitio o a la personalización de los anuncios mostrados.
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>
-      <a href="privacidad.html">Privacidad</a><span class="sep">|</span>
-      <a href="cookies.html">Cookies</a><span class="sep">|</span>
+      <a href="privacidad.html">Privacidad</a> |
+      <a href="cookies.html">Cookies</a> |
       <a href="aviso-legal.html">Aviso legal</a>
     </p>
-    <p>© 2025 Libertad Financiera</p>
+    <p>© 2026 Libertad Financiera</p>
   </footer>
+
 </body>
 </html>
