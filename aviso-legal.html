@@ -2,8 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="asKFQ79NVRK2QdkJTcGNzvWs0wGt5XOCp5WML_vvWX0" />
   <title>Aviso legal | Libertad Financiera</title>
-  <meta name="description" content="Aviso legal de Libertad Financiera." />
+  <meta name="description" content="Consulta el aviso legal de Libertad Financiera y la información general sobre el uso de este sitio web." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9161620238567586"
@@ -11,71 +12,444 @@
 
   <style>
     :root{
-      --nav:#0a2540;
-      --bg:#f4f6f8;
-      --text:#0b1220;
-      --muted:#4b5563;
-      --card:#ffffff;
-      --radius:14px;
-      --shadow:0 10px 25px rgba(10,37,64,.08);
+      --bg:#f5f7fb;
+      --white:#ffffff;
+      --dark:#0f172a;
+      --navy:#0a2540;
+      --blue:#2563eb;
+      --blue-dark:#1d4ed8;
+      --text:#334155;
+      --border:#e2e8f0;
+      --shadow:0 10px 30px rgba(15,23,42,0.08);
+      --radius:18px;
+      --max:1120px;
     }
+
     *{box-sizing:border-box}
-    body{font-family:Arial, sans-serif; background:var(--bg); margin:0; color:var(--text); line-height:1.7;}
-    header{background:var(--nav); color:#fff; padding:40px 20px; text-align:center;}
-    header h1{margin:0; font-size:32px}
-    main{max-width:900px; margin:30px auto; padding:0 16px;}
-    .card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:30px;}
-    h2{margin-top:20px}
-    p{margin:10px 0}
-    ul{margin-left:18px}
-    a{color:var(--nav); text-decoration:none; font-weight:700}
-    a:hover{text-decoration:underline}
-    footer{background:var(--nav); color:#fff; text-align:center; padding:20px; margin-top:30px}
-    footer a{color:#fff; text-decoration:none; font-weight:700}
-    footer a:hover{text-decoration:underline}
-    .sep{opacity:.55; margin:0 8px}
-    .muted{color:var(--muted)}
+
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:var(--bg);
+      color:var(--dark);
+      line-height:1.6;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .topbar{
+      background:var(--navy);
+      color:#fff;
+      padding:18px 20px;
+    }
+
+    .topbar-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:800;
+    }
+
+    .nav{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      color:#fff;
+      font-weight:700;
+      opacity:.92;
+    }
+
+    .nav a:hover{
+      opacity:1;
+      text-decoration:underline;
+    }
+
+    .hero{
+      background:linear-gradient(135deg, #0a2540 0%, #123c6a 100%);
+      color:#fff;
+      padding:60px 20px;
+    }
+
+    .hero-inner{
+      max-width:var(--max);
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:1.15fr .85fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .hero h1{
+      margin:0 0 14px;
+      font-size:48px;
+      line-height:1.08;
+    }
+
+    .hero p{
+      margin:0 0 22px;
+      font-size:18px;
+      opacity:.95;
+      max-width:720px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 20px;
+      border-radius:12px;
+      font-weight:800;
+    }
+
+    .btn-primary{
+      background:#fff;
+      color:var(--navy);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,.12);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.25);
+    }
+
+    .hero-card{
+      background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:22px;
+      padding:24px;
+      backdrop-filter:blur(4px);
+    }
+
+    .hero-card span{
+      display:inline-block;
+      background:#dbeafe;
+      color:#1e3a8a;
+      font-size:12px;
+      font-weight:800;
+      padding:6px 10px;
+      border-radius:999px;
+      text-transform:uppercase;
+      letter-spacing:.3px;
+      margin-bottom:14px;
+    }
+
+    .hero-card h2{
+      margin:0 0 10px;
+      font-size:26px;
+      color:#fff;
+      line-height:1.2;
+    }
+
+    .hero-card p{
+      margin:0;
+      font-size:16px;
+      opacity:.92;
+    }
+
+    main{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:34px 20px 50px;
+    }
+
+    .section{
+      margin-bottom:34px;
+    }
+
+    .section h2{
+      margin:0 0 8px;
+      font-size:34px;
+    }
+
+    .section p.lead{
+      margin:0 0 20px;
+      color:var(--text);
+      font-size:17px;
+      max-width:850px;
+    }
+
+    .legal-layout{
+      display:grid;
+      grid-template-columns:.85fr 1.15fr;
+      gap:22px;
+      align-items:start;
+    }
+
+    .card{
+      background:var(--white);
+      border-radius:18px;
+      box-shadow:var(--shadow);
+      padding:26px;
+      border:1px solid var(--border);
+    }
+
+    .tag{
+      display:inline-block;
+      background:#e0ecff;
+      color:#1d4ed8;
+      font-size:12px;
+      font-weight:800;
+      padding:7px 10px;
+      border-radius:999px;
+      text-transform:uppercase;
+      margin-bottom:14px;
+    }
+
+    .info-list{
+      display:grid;
+      gap:14px;
+    }
+
+    .info-item{
+      padding:16px 0;
+      border-bottom:1px solid var(--border);
+    }
+
+    .info-item:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+
+    .info-item strong{
+      display:block;
+      margin-bottom:6px;
+      font-size:18px;
+    }
+
+    .info-item p{
+      margin:0;
+      color:var(--text);
+    }
+
+    .legal-content h2{
+      margin:0 0 12px;
+      font-size:28px;
+      line-height:1.2;
+    }
+
+    .legal-block{
+      padding:18px 0;
+      border-bottom:1px solid var(--border);
+    }
+
+    .legal-block:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+
+    .legal-block h3{
+      margin:0 0 10px;
+      font-size:24px;
+    }
+
+    .legal-block p{
+      margin:0;
+      color:var(--text);
+      font-size:16px;
+    }
+
+    .back-link{
+      display:inline-block;
+      margin-top:22px;
+      color:var(--blue);
+      font-weight:800;
+    }
+
+    .back-link:hover{
+      color:var(--blue-dark);
+      text-decoration:underline;
+    }
+
+    footer{
+      background:var(--navy);
+      color:#fff;
+      text-align:center;
+      padding:28px 20px;
+      margin-top:20px;
+    }
+
+    footer a{
+      color:#fff;
+      font-weight:700;
+      margin:0 8px;
+    }
+
+    @media (max-width: 920px){
+      .hero-inner,
+      .legal-layout{
+        grid-template-columns:1fr;
+      }
+
+      .hero h1{
+        font-size:38px;
+      }
+
+      .section h2{
+        font-size:30px;
+      }
+
+      .legal-content h2{
+        font-size:26px;
+      }
+    }
+
+    @media (max-width: 600px){
+      .hero{
+        padding:48px 20px;
+      }
+
+      .hero h1{
+        font-size:31px;
+      }
+
+      .section h2{
+        font-size:27px;
+      }
+
+      .legal-block h3{
+        font-size:22px;
+      }
+    }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Aviso legal</h1>
-</header>
+  <header>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="logo">Libertad Financiera</div>
+        <nav class="nav">
+          <a href="index.html">Inicio</a>
+          <a href="ganar-dinero-online.html">Ganar dinero</a>
+          <a href="ingresos-pasivos.html">Ingresos pasivos</a>
+          <a href="que-es-adsense.html">AdSense</a>
+        </nav>
+      </div>
+    </div>
 
-<main>
-  <section class="card">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1>Aviso legal de Libertad Financiera</h1>
+          <p>
+            Consulta la información general sobre este sitio web, el uso del contenido,
+            la responsabilidad de la información publicada y las condiciones legales básicas.
+          </p>
 
-    <p class="muted">Última actualización: 2025</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="index.html">Volver al inicio</a>
+            <a class="btn btn-secondary" href="privacidad.html">Ver privacidad</a>
+          </div>
+        </div>
 
-    <h2>1. Información general</h2>
-    <p>Este sitio web ofrece contenido informativo sobre finanzas e ingresos online.</p>
+        <div class="hero-card">
+          <span>Información legal</span>
+          <h2>Condiciones generales del sitio</h2>
+          <p>
+            Este apartado recoge la información legal esencial para navegar por la web con claridad y transparencia.
+          </p>
+        </div>
+      </div>
+    </section>
+  </header>
 
-    <h2>2. Responsabilidad</h2>
-    <p>La información publicada es orientativa. No constituye asesoramiento financiero, legal o fiscal.</p>
+  <main>
+    <section class="section">
+      <h2>Información legal esencial</h2>
+      <p class="lead">
+        Aquí encontrarás un resumen claro del marco legal básico de la web y las condiciones aplicables al uso de sus contenidos.
+      </p>
 
-    <h2>3. Enlaces externos</h2>
-    <p>Este sitio puede enlazar a páginas de terceros. No nos hacemos responsables del contenido externo.</p>
+      <div class="legal-layout">
+        <div class="card">
+          <span class="tag">Resumen</span>
 
-    <h2>4. Propiedad intelectual</h2>
-    <p>El contenido, incluyendo textos y diseño, pertenece a sus autores. No se permite la copia íntegra sin autorización previa.</p>
+          <div class="info-list">
+            <div class="info-item">
+              <strong>Última actualización</strong>
+              <p>2025</p>
+            </div>
 
-    <p style="margin-top:20px;">
-      <a href="index.html">← Volver al inicio</a>
+            <div class="info-item">
+              <strong>Finalidad del sitio</strong>
+              <p>Ofrecer contenido informativo sobre finanzas, monetización e ingresos online.</p>
+            </div>
+
+            <div class="info-item">
+              <strong>Uso del contenido</strong>
+              <p>La información publicada es orientativa y no sustituye asesoramiento profesional.</p>
+            </div>
+
+            <div class="info-item">
+              <strong>Enlaces externos</strong>
+              <p>Algunos contenidos pueden dirigir a páginas de terceros ajenas a esta web.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card legal-content">
+          <h2>Texto del aviso legal</h2>
+
+          <div class="legal-block">
+            <h3>1. Información general</h3>
+            <p>
+              Este sitio web ofrece contenido informativo sobre finanzas e ingresos online.
+            </p>
+          </div>
+
+          <div class="legal-block">
+            <h3>2. Responsabilidad</h3>
+            <p>
+              La información publicada es orientativa. No constituye asesoramiento financiero, legal o fiscal.
+            </p>
+          </div>
+
+          <div class="legal-block">
+            <h3>3. Enlaces externos</h3>
+            <p>
+              Este sitio puede enlazar a páginas de terceros. No nos hacemos responsables del contenido externo.
+            </p>
+          </div>
+
+          <div class="legal-block">
+            <h3>4. Propiedad intelectual</h3>
+            <p>
+              El contenido, incluyendo textos y diseño, pertenece a sus autores. No se permite la copia íntegra sin autorización previa.
+            </p>
+          </div>
+
+          <a class="back-link" href="index.html">← Volver al inicio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="privacidad.html">Privacidad</a> |
+      <a href="cookies.html">Cookies</a> |
+      <a href="aviso-legal.html">Aviso legal</a>
     </p>
-
-  </section>
-</main>
-
-<footer>
-  <p>
-    <a href="privacidad.html">Privacidad</a><span class="sep">|</span>
-    <a href="cookies.html">Cookies</a><span class="sep">|</span>
-    <a href="aviso-legal.html">Aviso legal</a>
-  </p>
-  <p>© 2025 Libertad Financiera</p>
-</footer>
+    <p>© 2026 Libertad Financiera</p>
+  </footer>
 
 </body>
 </html>
