@@ -10,64 +10,72 @@
     crossorigin="anonymous"></script>
 
   <style>
-    :root{--nav:#0a2540;--bg:#f4f6f8;--text:#0b1220;--muted:#4b5563;--card:#fff;--radius:14px;--shadow:0 10px 25px rgba(10,37,64,.08)}
+    :root{
+      --nav:#0a2540;
+      --bg:#f4f6f8;
+      --text:#0b1220;
+      --muted:#4b5563;
+      --card:#ffffff;
+      --radius:14px;
+      --shadow:0 10px 25px rgba(10,37,64,.08);
+    }
     *{box-sizing:border-box}
-    body{font-family:Arial,sans-serif;background:var(--bg);margin:0;color:var(--text);line-height:1.75}
-    header{background:var(--nav);color:#fff;padding:44px 20px;text-align:center}
-    header h1{margin:0 0 6px;font-size:40px}
-    .nav{margin-top:14px}
-    .nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:600;opacity:.95}
-    .nav a:hover{opacity:1;text-decoration:underline}
-    main{max-width:980px;margin:28px auto;padding:0 16px}
-    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:34px 22px}
-    h2{margin:22px 0 8px;font-size:24px}
+    body{font-family:Arial, sans-serif; background:var(--bg); margin:0; color:var(--text); line-height:1.7;}
+    header{background:var(--nav); color:#fff; padding:40px 20px; text-align:center;}
+    header h1{margin:0; font-size:32px}
+    main{max-width:900px; margin:30px auto; padding:0 16px;}
+    .card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:30px;}
+    h2{margin-top:20px}
     p{margin:10px 0}
-    .muted{color:var(--muted)}
-    footer{background:var(--nav);color:#fff;text-align:center;padding:18px 16px;margin-top:26px}
-    footer a{color:#fff;text-decoration:none;font-weight:700}
+    ul{margin-left:18px}
+    a{color:var(--nav); text-decoration:none; font-weight:700}
+    a:hover{text-decoration:underline}
+    footer{background:var(--nav); color:#fff; text-align:center; padding:20px; margin-top:30px}
+    footer a{color:#fff; text-decoration:none; font-weight:700}
     footer a:hover{text-decoration:underline}
-    .sep{opacity:.55;margin:0 8px}
-    @media (max-width:850px){header h1{font-size:34px}}
+    .sep{opacity:.55; margin:0 8px}
+    .muted{color:var(--muted)}
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Libertad Financiera</h1>
-    <p class="nav">
-      <a href="index.html">Inicio</a>
-      <a href="ganar-dinero-internet.html">Ganar dinero</a>
-      <a href="ingresos-pasivos.html">Ingresos pasivos</a>
-      <a href="que-es-adsense.html">AdSense</a>
+
+<header>
+  <h1>Aviso legal</h1>
+</header>
+
+<main>
+  <section class="card">
+
+    <p class="muted">Última actualización: 2025</p>
+
+    <h2>1. Información general</h2>
+    <p>Este sitio web ofrece contenido informativo sobre finanzas e ingresos online.</p>
+
+    <h2>2. Responsabilidad</h2>
+    <p>La información publicada es orientativa. No constituye asesoramiento financiero, legal o fiscal.</p>
+
+    <h2>3. Enlaces externos</h2>
+    <p>Este sitio puede enlazar a páginas de terceros. No nos hacemos responsables del contenido externo.</p>
+
+    <h2>4. Propiedad intelectual</h2>
+    <p>El contenido, incluyendo textos y diseño, pertenece a sus autores. No se permite la copia íntegra sin autorización previa.</p>
+
+    <p style="margin-top:20px;">
+      <a href="index.html">← Volver al inicio</a>
     </p>
-  </header>
 
-  <main>
-    <section class="card">
-      <h2>Aviso legal</h2>
-      <p class="muted">Última actualización: 2025</p>
+  </section>
+</main>
 
-      <h2>1. Información general</h2>
-      <p>Este sitio web ofrece contenido informativo sobre finanzas e ingresos online.</p>
+<footer>
+  <p>
+    <a href="privacidad.html">Privacidad</a><span class="sep">|</span>
+    <a href="cookies.html">Cookies</a><span class="sep">|</span>
+    <a href="aviso-legal.html">Aviso legal</a>
+  </p>
+  <p>© 2025 Libertad Financiera</p>
+</footer>
 
-      <h2>2. Responsabilidad</h2>
-      <p>La información publicada es orientativa. No constituye asesoramiento financiero, legal o fiscal.</p>
-
-      <h2>3. Enlaces externos</h2>
-      <p>Este sitio puede enlazar a páginas de terceros. No nos hacemos responsables del contenido externo.</p>
-
-      <h2>4. Propiedad intelectual</h2>
-      <p>El contenido (textos y diseño) pertenece a sus autores. No se permite la copia íntegra sin permiso.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>
-      <a href="privacidad.html">Privacidad</a><span class="sep">|</span>
-      <a href="cookies.html">Cookies</a><span class="sep">|</span>
-      <a href="aviso-legal.html">Aviso legal</a>
-    </p>
-    <p>© 2025 Libertad Financiera</p>
-  </footer>
 </body>
 </html>
