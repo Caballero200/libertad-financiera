@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>TÍTULO DEL ARTÍCULO</title>
+  <meta name="description" content="Descripción del artículo para SEO" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    :root{
+      --nav:#0a2540;
+      --bg:#f4f6f8;
+      --text:#0b1220;
+      --muted:#4b5563;
+      --card:#ffffff;
+      --radius:14px;
+      --shadow:0 10px 25px rgba(10,37,64,.08);
+    }
+    *{box-sizing:border-box}
+    body{font-family:Arial, sans-serif; background:var(--bg); margin:0; color:var(--text); line-height:1.7;}
+
+    header{background:var(--nav); color:#fff; padding:40px 20px; text-align:center;}
+    header h1{margin:0; font-size:32px}
+
+    main{max-width:900px; margin:30px auto; padding:0 16px;}
+    .card{background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); padding:30px;}
+
+    h2{margin-top:20px}
+    p{margin:10px 0}
+    ul{margin-left:18px}
+
+    a{color:var(--nav); text-decoration:none; font-weight:700}
+    a:hover{text-decoration:underline}
+
+    footer{background:var(--nav); color:#fff; text-align:center; padding:20px; margin-top:30px}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>TÍTULO DEL ARTÍCULO</h1>
+</header>
+
+<main>
+  <section class="card">
+
+    <p>INTRODUCCIÓN DEL ARTÍCULO...</p>
+
+    <h2>Sección 1</h2>
+    <p>Contenido...</p>
+
+    <h2>Sección 2</h2>
+    <p>Contenido...</p>
+
+    <h2>Sección 3</h2>
+    <ul>
+      <li>Punto 1</li>
+      <li>Punto 2</li>
+    </ul>
+
+    <h2>Conclusión</h2>
+    <p>Resumen final...</p>
+
+    <p style="margin-top:20px;">
+      <a href="index.html">← Volver al inicio</a>
+    </p>
+
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Libertad Financiera</p>
+</footer>
+
+</body>
+</html>
